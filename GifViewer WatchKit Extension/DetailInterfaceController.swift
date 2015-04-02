@@ -30,16 +30,17 @@ class DetailInterfaceController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         
-        search(text!)
+        if let text = self.text {
+            search(text)
+        }
     }
     
     // MARK: - Actions
     
     func search(text: String) {
-        
-        WKInterfaceController.openParentApplication(["search.text" : text], reply: { (replyInfo, _) -> Void in
-            if let filename = replyInfo["search.filename"] as? String,
-                framesCount = replyInfo["search.framesCount"] as? Int {
+        WKInterfaceController.openParentApplication(["text" : text], reply: { (replyInfo, _) -> Void in
+            if let filename = replyInfo["filename"] as? String,
+                framesCount = replyInfo["framesCount"] as? Int {
                     self.showImage(filename, framesCount: framesCount)
             }
         })

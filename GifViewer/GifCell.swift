@@ -14,13 +14,13 @@ class GifCell: UICollectionViewCell {
     
     var session = NSURLSession.sharedSession()
     var task: NSURLSessionDataTask?
+    @IBOutlet weak var imageView: FLAnimatedImageView!
     
     var url: NSURL? {
         didSet {
             self.task = self.session.dataTaskWithURL(url!, completionHandler: { data, _, _ in
                 dispatch_async(dispatch_get_main_queue(), {
-                    let animatedImageView = self.viewWithTag(666) as! FLAnimatedImageView
-                    animatedImageView.animatedImage = FLAnimatedImage(animatedGIFData: data)
+                    self.imageView.animatedImage = FLAnimatedImage(animatedGIFData: data)
                 })
             })
             self.task?.resume()
@@ -36,8 +36,7 @@ class GifCell: UICollectionViewCell {
         self.task?.cancel()
         
         //Clear image view
-        let animatedImageView = viewWithTag(666) as! FLAnimatedImageView
-        animatedImageView.image = nil
+        self.imageView.image = nil
     }
     
 }
