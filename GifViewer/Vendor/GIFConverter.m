@@ -2,12 +2,6 @@
 #import <UIKit/UIKit.h>
 #import <ImageIO/ImageIO.h>
 
-@interface GIFConverter ()
-
-@property (nonatomic, strong) dispatch_queue_t backgroundQueue;
-
-@end
-
 @implementation GIFConverter
 
 #pragma mark - Life cycle
@@ -16,7 +10,6 @@
     if (!(self = [super init])) {
         return nil;
     }
-    self.backgroundQueue = dispatch_queue_create("com.themis.gifoclock.exportQueue", DISPATCH_QUEUE_SERIAL);
     return self;
 }
 

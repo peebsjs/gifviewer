@@ -9,7 +9,7 @@
 import WatchKit
 import Foundation
 
-let suiteName = "com.themis.gifoclock"
+let suiteName = "group.com.themis.gifviewer"
 
 class DetailInterfaceController: WKInterfaceController {
     

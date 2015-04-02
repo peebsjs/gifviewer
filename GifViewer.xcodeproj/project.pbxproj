@@ -32,6 +32,7 @@
 		775304FC1ACD987B004BA852 /* GIFConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 775304F91ACD987B004BA852 /* GIFConverter.m */; };
 		775305021ACD9951004BA852 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775305011ACD9951004BA852 /* GifCell.swift */; };
 		775305041ACD9B06004BA852 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775305031ACD9B06004BA852 /* DetailInterfaceController.swift */; };
+		775305071ACD9FF7004BA852 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775305061ACD9FF7004BA852 /* Array+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		775305011ACD9951004BA852 /* GifCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		775305031ACD9B06004BA852 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		775305051ACD9DEB004BA852 /* GifViewer WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GifViewer WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		775305061ACD9FF7004BA852 /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				7729132B1ACD961600058884 /* LaunchScreen.xib */,
 				772913201ACD961600058884 /* Supporting Files */,
 				775305001ACD98CF004BA852 /* GifViewer-Bridging-Header.h */,
+				775305061ACD9FF7004BA852 /* Array+Additions.swift */,
 			);
 			path = GifViewer;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				772913251ACD961600058884 /* ViewController.swift in Sources */,
 				772913231ACD961600058884 /* AppDelegate.swift in Sources */,
 				775305021ACD9951004BA852 /* GifCell.swift in Sources */,
+				775305071ACD9FF7004BA852 /* Array+Additions.swift in Sources */,
 				775304FC1ACD987B004BA852 /* GIFConverter.m in Sources */,
 				775304FA1ACD987B004BA852 /* FLAnimatedImage.m in Sources */,
 				775304FB1ACD987B004BA852 /* FLAnimatedImageView.m in Sources */,
