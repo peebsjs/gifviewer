@@ -16,7 +16,6 @@
 		775304B61ACD9661004BA852 /* GifViewerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7753049F1ACD9661004BA852 /* GifViewerKit.framework */; };
 		775304B71ACD9661004BA852 /* GifViewerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7753049F1ACD9661004BA852 /* GifViewerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		775304C91ACD967D004BA852 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775304C81ACD967D004BA852 /* InterfaceController.swift */; };
-		775304CB1ACD967D004BA852 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775304CA1ACD967D004BA852 /* NotificationController.swift */; };
 		775304CD1ACD967D004BA852 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775304CC1ACD967D004BA852 /* Images.xcassets */; };
 		775304D11ACD967D004BA852 /* GifViewer WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 775304D01ACD967D004BA852 /* GifViewer WatchKit App.app */; };
 		775304D91ACD967D004BA852 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775304D71ACD967D004BA852 /* Interface.storyboard */; };
@@ -32,6 +31,7 @@
 		775304FB1ACD987B004BA852 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775304F71ACD987B004BA852 /* FLAnimatedImageView.m */; };
 		775304FC1ACD987B004BA852 /* GIFConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 775304F91ACD987B004BA852 /* GIFConverter.m */; };
 		775305021ACD9951004BA852 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775305011ACD9951004BA852 /* GifCell.swift */; };
+		775305041ACD9B06004BA852 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775305031ACD9B06004BA852 /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +98,6 @@
 		775304C61ACD967D004BA852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775304C71ACD967D004BA852 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		775304C81ACD967D004BA852 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		775304CA1ACD967D004BA852 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		775304CC1ACD967D004BA852 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		775304D01ACD967D004BA852 /* GifViewer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GifViewer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		775304D61ACD967D004BA852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +118,8 @@
 		775304F91ACD987B004BA852 /* GIFConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFConverter.m; sourceTree = "<group>"; };
 		775305001ACD98CF004BA852 /* GifViewer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GifViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		775305011ACD9951004BA852 /* GifCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
+		775305031ACD9B06004BA852 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		775305051ACD9DEB004BA852 /* GifViewer WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GifViewer WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,8 +221,9 @@
 		775304C41ACD967D004BA852 /* GifViewer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				775305051ACD9DEB004BA852 /* GifViewer WatchKit Extension.entitlements */,
+				775305031ACD9B06004BA852 /* DetailInterfaceController.swift */,
 				775304C81ACD967D004BA852 /* InterfaceController.swift */,
-				775304CA1ACD967D004BA852 /* NotificationController.swift */,
 				775304CC1ACD967D004BA852 /* Images.xcassets */,
 				775304C51ACD967D004BA852 /* Supporting Files */,
 			);
@@ -377,6 +379,12 @@
 					};
 					775304C21ACD967D004BA852 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = AS6M6RMXFK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					775304CF1ACD967D004BA852 = {
 						CreatedOnToolsVersion = 6.3;
@@ -473,7 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775304CB1ACD967D004BA852 /* NotificationController.swift in Sources */,
+				775305041ACD9B06004BA852 /* DetailInterfaceController.swift in Sources */,
 				775304C91ACD967D004BA852 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,6 +716,9 @@
 		775304E31ACD967D004BA852 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GifViewer WatchKit Extension/GifViewer WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -715,6 +726,7 @@
 				INFOPLIST_FILE = "GifViewer WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -722,9 +734,13 @@
 		775304E41ACD967D004BA852 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GifViewer WatchKit Extension/GifViewer WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GifViewer WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

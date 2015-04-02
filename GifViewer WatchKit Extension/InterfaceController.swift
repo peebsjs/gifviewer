@@ -12,20 +12,36 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-        
-        // Configure interface objects here.
+    // MARK: - Storyboard
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+        switch segueIdentifier {
+        case "ShowCat": return "cat"
+        case "ShowDog": return "dog"
+        case "ShowBeer": return "beer"
+        case "ShowDance": return "dance"
+        case "ShowEpic": return "epic"
+        case "ShowFail": return "fail"
+        case "ShowJump": return "jump"
+        case "ShowNicolasCage": return "nicolas cage"
+        case "ShowNinja": return "ninja"
+        case "ShowPanda": return "panda"
+        case "ShowParty": return "party"
+        case "ShowReaction": return "reaction"
+        case "ShowSmile": return "smile"
+        case "ShowWelcome": return "welcome"
+        default: return nil
+        }
     }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    
+    // MARK: - Actions
+    
+    @IBAction func showTextInput() {
+        presentTextInputControllerWithSuggestions(nil, allowedInputMode: .Plain) { input in
+            if input != nil {
+                self.presentControllerWithName("DetailController", context: input)
+            }
+        }
     }
 
 }

@@ -9,5 +9,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.themis.gifviewer")
         return true
     }
-}
+}   
 
