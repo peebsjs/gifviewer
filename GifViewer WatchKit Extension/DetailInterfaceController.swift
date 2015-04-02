@@ -9,8 +9,6 @@
 import WatchKit
 import Foundation
 
-let suiteName = "group.com.themis.gifviewer"
-
 class DetailInterfaceController: WKInterfaceController {
     
     // MARK: - Properties
@@ -47,7 +45,7 @@ class DetailInterfaceController: WKInterfaceController {
     }
     
     func showImage(filename: String, framesCount: Int) {
-        let containerUrl = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier(suiteName)?.URLByAppendingPathComponent("Frames", isDirectory: true)
+        let containerUrl = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.themis.gifviewer")?.URLByAppendingPathComponent("Frames", isDirectory: true)
         
         var images = [UIImage]()
         
@@ -59,12 +57,9 @@ class DetailInterfaceController: WKInterfaceController {
         }
         
         let animatedImage = UIImage.animatedImageWithImages(images, duration: 1)
-        let animatedImageName = suiteName.stringByAppendingPathExtension("image")
         
-        WKInterfaceDevice.currentDevice().addCachedImage(animatedImage, name: animatedImageName!)
-        
-        imageView.setImageNamed(animatedImageName)
-        imageView.startAnimatingWithImagesInRange(NSMakeRange(0, framesCount), duration: 1, repeatCount: -1)
+        imageView.setImage(animatedImage)
+        imageView.startAnimating()
     }
 
 }

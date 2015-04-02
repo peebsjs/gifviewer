@@ -24,6 +24,10 @@ class GifSearchViewController: UIViewController {
         self.init()
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.registerNib(UINib(nibName: "GifCell", bundle: nil), forCellWithReuseIdentifier: "GifCell")

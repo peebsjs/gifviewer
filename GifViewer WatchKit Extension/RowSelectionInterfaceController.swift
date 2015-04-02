@@ -18,7 +18,7 @@ class RowSelectionInterfaceController: WKInterfaceController {
         ("🐱" , "cat"),
         ("🐶" , "dog"),
         ("🍺" , "beer"),
-        ("💃" , "you must dance"),
+        ("💃" , "dance"),
         ("Epic", "epic"),
         ("Fail" , "fail"),
         ("Jump" , "jump"),

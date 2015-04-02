@@ -66,25 +66,25 @@
                                 <button alignment="left" title="🐱" id="P5B-rK-8vo">
                                     <connections>
                                         <action selector="searchCat" destination="AgC-eL-Hgc" id="V39-Pi-4Ni"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowCat" id="RFc-8D-dne"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="cat" id="RFc-8D-dne"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="🐶" id="kyj-rg-MIp">
                                     <connections>
                                         <action selector="searchDog" destination="AgC-eL-Hgc" id="tNd-Rx-Uba"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowDog" id="bw7-Da-9Ci"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="dog" id="bw7-Da-9Ci"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="🍺" id="vpd-H0-D2y">
                                     <connections>
                                         <action selector="searchBeer" destination="AgC-eL-Hgc" id="93L-62-d5Q"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowBeer" id="5hg-vj-3yG"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="beer" id="5hg-vj-3yG"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="💃" id="Go3-UA-KTy">
                                     <connections>
                                         <action selector="searchDance" destination="AgC-eL-Hgc" id="3Ed-Mv-gnp"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowDance" id="V8E-Lv-jkk"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="dance" id="V8E-Lv-jkk"/>
                                     </connections>
                                 </button>
                             </items>
@@ -95,20 +95,20 @@
                                     <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="searchEpic" destination="AgC-eL-Hgc" id="lMY-Hv-MZD"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowEpic" id="kCO-8b-WRr"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="epic" id="kCO-8b-WRr"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="Fail" id="ouB-Kz-aJN">
                                     <color key="titleColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="searchFail" destination="AgC-eL-Hgc" id="1OP-MS-D3r"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowFail" id="yWY-yO-CgE"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="fail" id="yWY-yO-CgE"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="Jump" id="5rX-Nt-WuK">
                                     <color key="titleColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowJump" id="72G-9H-fGX"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="jump" id="72G-9H-fGX"/>
                                     </connections>
                                 </button>
                             </items>
@@ -119,13 +119,13 @@
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="searchNicolasCage" destination="AgC-eL-Hgc" id="FCD-4M-2cR"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowNicolasCage" id="fAr-o9-rHl"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="nicolas cage" id="fAr-o9-rHl"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="Ninja" id="tqS-Iv-IGA">
                                     <color key="titleColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowNinja" id="qk6-hn-ljV"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ninja" id="qk6-hn-ljV"/>
                                     </connections>
                                 </button>
                             </items>
@@ -136,14 +136,14 @@
                                     <color key="titleColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="searchSmile" destination="AgC-eL-Hgc" id="Gyk-El-iJb"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowSmile" id="74h-vO-k8d"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="smile" id="74h-vO-k8d"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" title="Welcome" id="EJ3-fJ-mf5">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="searchWelcome" destination="AgC-eL-Hgc" id="1q0-vc-Noo"/>
-                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="ShowWelcome" id="Pry-bG-zER"/>
+                                        <segue destination="fkB-eu-Aj9" kind="push" identifier="welcome" id="Pry-bG-zER"/>
                                     </connections>
                                 </button>
                             </items>
@@ -169,6 +169,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kMl-Qj-2vg"/>
+        <segue reference="RFc-8D-dne"/>
     </inferredMetricsTieBreakers>
 </document>
