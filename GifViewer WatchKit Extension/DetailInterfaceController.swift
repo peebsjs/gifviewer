@@ -21,19 +21,19 @@ class DetailInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        text = context as? String
+        self.text = context as? String
     }
 
     override func willActivate() {
         super.willActivate()
-        
         if let text = self.text {
-            search(text)
+            self.search(text)
         }
     }
     
-    // MARK: - Actions
+    
+    
+    
     
     func search(text: String) {
         WKInterfaceController.openParentApplication(["text" : text], reply: { (replyInfo, _) -> Void in
@@ -61,5 +61,10 @@ class DetailInterfaceController: WKInterfaceController {
         imageView.setImage(animatedImage)
         imageView.startAnimating()
     }
-
 }
+
+
+
+
+
+

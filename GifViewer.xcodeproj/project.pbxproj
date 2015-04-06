@@ -180,9 +180,9 @@
 		7729131F1ACD961600058884 /* GifViewer */ = {
 			isa = PBXGroup;
 			children = (
+				775304F31ACD986A004BA852 /* Vendor */,
 				779671041ACDAFDE00B9AEB9 /* GifCell.swift */,
 				779671051ACDAFDE00B9AEB9 /* GifCell.xib */,
-				775304F31ACD986A004BA852 /* Vendor */,
 				775304E61ACD968C004BA852 /* GifViewer.entitlements */,
 				772913221ACD961600058884 /* AppDelegate.swift */,
 				775305081ACDAE41004BA852 /* GifSearchViewController.swift */,

@@ -22,6 +22,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
         if let searchText = userInfo?["text"] as? String {
             self.gifSearchViewController.performSearchWithText(searchText, completion: { (items) -> () in
@@ -34,4 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         }
     }
-}   
+}
+
+
+
+
+
+
+
